@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.codeitsuisse.team91.expensetracker.Transaction_category"
+android:id="@+id/stypes"
+android:background="#000">
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/s_types"
+    android:entries="@array/all_types"
+    android:prompt="@string/all_type"
+    android:background="#fffbff28"
+    android:spinnerMode="dropdown" />
+
+
+
+<Button
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="@string/trans_cancel"
+    android:id="@+id/t_cancel"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:textColor="#000"
+    android:textSize="20dp"
+    android:background="#ffd30a09" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="@string/summary_text"
+    android:id="@+id/show1"
+
+
+
+    android:textColor="#000"
+    android:textSize="20dp"
+    android:background="#ff29d342"
+    android:layout_alignTop="@+id/t_cancel"
+    android:layout_alignRight="@+id/s_types"
+    android:layout_alignEnd="@+id/s_types" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text=" Click show button to see result"
+    android:id="@+id/display"
+    android:layout_below="@+id/s_types"
+    android:layout_marginTop="14dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="#fff" />
+</RelativeLayout>
+

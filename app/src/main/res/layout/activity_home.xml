@@ -1,0 +1,135 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context=".HomeActivity"
+android:background="#000">
+
+<View android:id="@+id/strut"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_centerHorizontal="true"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Create Budget"
+    android:layout_alignRight="@+id/strut"
+    android:layout_marginRight="10dp"
+    android:id="@+id/hcreatbutton"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:background="#ffa500" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Edit Budget"
+    android:layout_marginLeft="10dp"
+    android:layout_alignLeft="@+id/strut"
+    android:id="@+id/heditbutton"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:background="#ff57beff" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Select Budget :"
+    android:id="@+id/SBudget"
+    android:elegantTextHeight="false"
+    android:textSize="20dp"
+    android:layout_below="@+id/hcreatbutton"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:textColor="#fff" />
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hdrop"
+    android:layout_below="@+id/SBudget"
+    android:layout_alignLeft="@+id/hcreatbutton"
+    android:layout_alignStart="@+id/hcreatbutton"
+    android:layout_alignRight="@+id/heditbutton"
+    android:layout_alignEnd="@+id/heditbutton"
+    android:spinnerMode="dropdown"
+    android:background="#d3d3d3"
+    android:layout_marginTop="10dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Current Balance :"
+    android:id="@+id/HcurrentBal"
+    android:textSize="20dp"
+    android:layout_below="@+id/hdrop"
+    android:layout_alignLeft="@+id/hdrop"
+    android:layout_alignStart="@+id/hdrop"
+    android:textColor="#fff"
+    android:layout_marginTop="15dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/rupee"
+    android:id="@+id/BalAmount"
+    android:layout_alignBottom="@+id/HcurrentBal"
+    android:layout_alignRight="@+id/heditbutton"
+    android:layout_alignEnd="@+id/heditbutton"
+    android:layout_alignLeft="@+id/heditbutton"
+    android:layout_alignStart="@+id/heditbutton"
+    android:gravity="right"
+    android:textColor="#d3d3d3"
+    android:layout_marginTop="15dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/IncomeButton"
+    android:id="@+id/HIncome"
+    android:layout_below="@+id/HcurrentBal"
+    android:layout_alignLeft="@+id/hcreatbutton"
+    android:layout_alignStart="@+id/hcreatbutton"
+    android:layout_alignRight="@+id/hcreatbutton"
+    android:layout_alignEnd="@+id/hcreatbutton"
+
+    android:layout_marginTop="25dp"
+    android:background="#ff58ff3e" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/TransactionButton"
+    android:id="@+id/HTrans"
+    android:layout_below="@+id/HIncome"
+    android:layout_alignRight="@+id/hcreatbutton"
+    android:layout_alignEnd="@+id/hcreatbutton"
+    android:layout_alignLeft="@+id/hcreatbutton"
+    android:layout_alignStart="@+id/hcreatbutton"
+    android:background="#ffff00"
+    android:layout_marginTop="20dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ExpenseButton"
+    android:id="@+id/HExpense"
+    android:layout_alignRight="@+id/heditbutton"
+    android:layout_alignEnd="@+id/heditbutton"
+    android:layout_alignBottom="@+id/HTrans"
+    android:layout_alignTop="@+id/HIncome"
+    android:background="#ffff6b5f"
+    android:layout_alignLeft="@+id/heditbutton"
+    android:layout_alignStart="@+id/heditbutton" />
+
+</RelativeLayout>

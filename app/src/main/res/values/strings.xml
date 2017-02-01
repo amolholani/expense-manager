@@ -1,0 +1,66 @@
+
+
+<resources>
+<string name="app_name">Team 91</string>
+
+<string name="hello_world">Hello world!</string>
+<string name="action_settings">Settings</string>
+<string name="Budget_name">Name :</string>
+<string name="description">Description(Optional) :</string>
+<string name="Initbal">Initial Balance :</string>
+<string name="acttitle">Create Budget</string>
+<string name="title_activity_edit_budget">EditBudget</string>
+<string name="editBudget">Edit Budget</string>
+<string name="ButtonDelete">Delete</string>
+<string name="ButtonCancle">Cancel</string>
+<string name="ButtonSave">Save</string>
+<string name="title_activity_home">HomeActivity</string>
+<string name="ExpenseButton">Expense</string>
+<string name="IncomeButton">Income</string>
+<string name="liab">Liability</string>
+<string name="paid">Paid</string>
+<string name="TransactionButton">Transaction</string>
+<string name="rupee">\u20b9 0.00</string>
+<string name="title_activity_income">Income</string>
+<string name="i_selct_category">Select category :</string>
+<string name="i_amount_text">Amount :</string>
+<string name="i_date_text">Date :</string>
+<string name="i_description">Description :</string>
+<string name="i_save_butt">Save</string>
+<string name="i_cancel_butt">Cancel</string>
+<string name="i_add_category">Add Category</string>
+<string name="i_date">date</string>
+<string name="title_activity_expense_activity">Expense</string>
+<string name="title_activity_transaction_category">Transactions</string>
+<string name="summary_text">Show</string>
+<string name="date_filter">Date Filter</string>
+<string name="all_type">Expense Transaction</string>
+<string name="all_categories">Salary</string>
+<string name="ddate">ddate</string>
+<string name="trans_cancel">Cancel</string>
+
+<string-array name="all_types">
+
+    <item>Expense Transaction</item>
+    <item>Income Transaction</item>
+</string-array>
+
+<string-array name="all_categories">
+    <item>Fuel</item>
+    <item>Cosmetics</item>
+    <item>Foodz</item>
+    <item>Mess</item>
+    <item>Books</item>
+    <item>Gift</item>
+    <item>Others</item>
+</string-array>
+
+<string-array name="income_categories">
+    <item>Salary</item>
+    <item>Gift</item>
+    <item>Prize money</item>
+    <item>Others</item>
+</string-array>
+<string name="title_activity_creat_budget">CreatBudget</string>
+    <string name="title_activity_splash">Splash</string>
+</resources>

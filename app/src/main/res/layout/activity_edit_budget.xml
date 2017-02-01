@@ -1,0 +1,126 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.codeitsuisse.team91.expensetracker.EditBudget"
+android:background="#000"
+android:transitionGroup="false">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Budget_name"
+    android:id="@+id/name"
+    android:textSize="20sp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:textColor="#fff"
+    android:layout_marginTop="10dp" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/budgetName"
+    android:hint="Name Of Budget"
+    android:layout_below="@+id/name"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="07dp"
+    android:textColorHint="#ff989898"
+    android:textColor="#fff"
+    android:visibility="visible" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Saving Goal"
+    android:id="@+id/description"
+    android:textSize="20dp"
+    android:layout_below="@+id/budgetName"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="15dp"
+    android:textColor="#fff" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/budgetdescription"
+    android:hint="Enter amount to edit savings:"
+    android:inputType="number"
+    android:layout_below="@+id/description"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="07dp"
+    android:textColor="#fff"
+    android:textColorHint="#ff989898" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Initbal"
+    android:id="@+id/initBal"
+    android:layout_below="@+id/budgetdescription"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:textSize="20dp"
+    android:layout_marginTop="15dp"
+    android:textColor="#fff" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:ems="10"
+    android:id="@+id/InitBal"
+    android:layout_below="@+id/initBal"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:textColor="#fff"
+    android:hint="0.00"
+    android:textColorHint="#ff989898" />
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="@string/ButtonSave"
+    android:id="@+id/savebutton"
+    android:textSize="25dp"
+    android:textStyle="normal"
+    android:background="#ff49d337"
+    android:layout_alignTop="@+id/canclebutton"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="@string/ButtonDelete"
+    android:id="@+id/deletebutton"
+    android:textSize="25dp"
+    android:textStyle="normal"
+    android:background="#fffe4b3a"
+    android:layout_alignTop="@+id/savebutton"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="@string/ButtonCancle"
+    android:id="@+id/canclebutton"
+    android:textSize="25dp"
+    android:textStyle="normal"
+    android:background="#d3d3d3"
+    android:layout_marginBottom="93dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/InitBal"
+    android:layout_alignEnd="@+id/InitBal" />
+
+
+</RelativeLayout>
+
